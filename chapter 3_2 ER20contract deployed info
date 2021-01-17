@@ -1,0 +1,152 @@
+Last login: Fri Jun 21 14:23:24 on ttys000
+(base) Hiroyas-MacBook-Pro:~ hiroyakawaguchi$ cd desktop
+(base) Hiroyas-MacBook-Pro:desktop hiroyakawaguchi$ cd myWalelt
+-bash: cd: myWalelt: No such file or directory
+(base) Hiroyas-MacBook-Pro:desktop hiroyakawaguchi$ cd myWallet
+(base) Hiroyas-MacBook-Pro:myWallet hiroyakawaguchi$ truffle test --network ribkeby
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/Chapter3_2.sol
+> Compiling ./contracts/Migrations.sol
+> Compiling openzeppelin-solidity/contracts/math/SafeMath.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC20/ERC20.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC20/IERC20.sol
+> Artifacts written to /var/folders/7f/41ck1xkx2mbcg17n__dj6f640000gn/T/test-119521-56596-1s6caoa.qrqh
+> Compiled successfully using:
+   - solc: 0.5.0+commit.1d4f565a.Emscripten.clang
+
+
+
+  Contract: Chapter3_2
+    ✓ ...should put 100BT in the first account.
+
+
+  1 passing (50ms)
+
+(base) Hiroyas-MacBook-Pro:myWallet hiroyakawaguchi$ truffle migrate --network rinkeby
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/Chapter3_2.sol
+> Compiling ./contracts/Migrations.sol
+> Compiling openzeppelin-solidity/contracts/math/SafeMath.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC20/ERC20.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC20/IERC20.sol
+> Artifacts written to /Users/hiroyakawaguchi/Desktop/myWallet/build/contracts
+> Compiled successfully using:
+   - solc: 0.5.0+commit.1d4f565a.Emscripten.clang
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x6ad08d
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        4597662
+   > block timestamp:     1561094694
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             2.893086432
+   > gas used:            269844
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000539688 ETH
+
+   -------------------------------------
+   > Total cost:         0.000539688 ETH
+
+
+2_deploy_Chapter3_2.js
+======================
+
+   Deploying 'Chapter3_2'
+   ----------------------
+   > block number:        4597664
+   > block timestamp:     1561094704
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             2.890477012
+   > gas used:            1277676
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.002555352 ETH
+
+   -------------------------------------
+   > Total cost:         0.002555352 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.00309504 ETH
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x6aebc7
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x664865ee62f281dffb78fcc811e99db3858d24c4dfd19e806da0256f9471d2d8
+   > Blocks: 0            Seconds: 9
+   > contract address:    0xa71aC23B3A378Aa4416ebA34b0865D484FA60b13
+   > block number:        4597663
+   > block timestamp:     1561094725
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             2.88792924
+   > gas used:            284844
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00569688 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00569688 ETH
+
+
+2_deploy_Chapter3_2.js
+======================
+
+   Deploying 'Chapter3_2'
+   ----------------------
+   > transaction hash:    0x5d5d876c390e36b587b4ece491fc3c143bd94a6bc3f6f655efa28b007c73a653
+   > Blocks: 0            Seconds: 9
+   > contract address:    0x6914c06931815db7f05fED34B41798eb3C922B4F      **このコントラクトアドレスを入れるとchapter13-8動く
+   > block number:        4597665
+   > block timestamp:     1561094755
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             2.86003504
+   > gas used:            1352676
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02705352 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.02705352 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.0327504 ETH
+
+(base) Hiroyas-MacBook-Pro:myWallet hiroyakawaguchi$

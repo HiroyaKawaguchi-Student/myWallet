@@ -1,0 +1,712 @@
+(base) Hiroyas-MacBook-Pro:ERC721Chap13 hiroyakawaguchi$ truffle migrate --network rinkeby
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x6b2e67
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        4880190
+   > block timestamp:     1565332790
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.465016824
+   > gas used:            269908
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000539816 ETH
+
+   -------------------------------------
+   > Total cost:         0.000539816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Deploying 'ERC721Chap13'
+   ------------------------
+   > block number:        4880192
+   > block timestamp:     1565332815
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.459583638
+   > gas used:            2689559
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005379118 ETH
+
+   -------------------------------------
+   > Total cost:         0.005379118 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.005918934 ETH
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x6b26c4
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x204c993ae70b381b26a90fa3cfb4cf70fe0e9e61c3530fd1854f12f0f6d6a616
+   > Blocks: 2            Seconds: 17
+   > contract address:    0x0b728d985BAe73D17749e634D4D67883e627F9Cf
+   > block number:        4880193
+   > block timestamp:     1565332856
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.45985848
+   > gas used:            284908
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00569816 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00569816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Deploying 'ERC721Chap13'
+   ------------------------
+   > transaction hash:    0xde4a488bf80542c806b32a6fedbb85b359d1e765e75d4e7f0442e500f6c30859
+   > Blocks: 0            Seconds: 9
+   > contract address:    0x27Fd356F292de078Ce06D14338a0d12ACa901d07    **このコントラクトアドレスを入れると動く
+   > block number:        4880195
+   > block timestamp:     1565332886
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.39982662
+   > gas used:            2959559
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05919118 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.05919118 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.06488934 ETH
+
+
+
+
+
+
+
+↓ここから下はonce again deployしたやつ. I used truffle migrate --reset --network rinkeby instead of truffle migrate --network rinkeby
+
+(base) Hiroyas-MacBook-Pro:ERC721Chap13 hiroyakawaguchi$
+
+(base) Hiroyas-MacBook-Pro:~ hiroyakawaguchi$ cd ERC721Chap13
+(base) Hiroyas-MacBook-Pro:ERC721Chap13 hiroyakawaguchi$ truffle migrate --reset --network rinkeby
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x6aa790
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > block number:        4959433
+   > block timestamp:     1566528407
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.332892301
+   > gas used:            269908
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000539816 ETH
+
+   -------------------------------------
+   > Total cost:         0.000539816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Replacing 'ERC721Chap13'
+   ------------------------
+   > block number:        4959435
+   > block timestamp:     1566528432
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.327459115
+   > gas used:            2689559
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005379118 ETH
+
+   -------------------------------------
+   > Total cost:         0.005379118 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.005918934 ETH
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x6acfc0
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0xe93a011e1dcc0618cc0af1655e4bd12b06e9f54f633373de255240520271b23d
+   > Blocks: 0            Seconds: 5
+   > contract address:    0x5003078831e0b12f15CdE84E0362B90D0a83aE65
+   > block number:        4959436
+   > block timestamp:     1566528464
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.327733957
+   > gas used:            284908
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00569816 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00569816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Replacing 'ERC721Chap13'
+   ------------------------
+   > transaction hash:    0xee1ee92a472c9c4e1121b8b3b87b9b7dc3942aedd7796e5abbe637de5f4f3f2c
+   > Blocks: 0            Seconds: 9
+   > contract address:    0x62D352c413f8F982C863425ba0e1E73F1981E284     これを使う！
+   > block number:        4959438
+   > block timestamp:     1566528494
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.267702097
+   > gas used:            2959559
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05919118 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.05919118 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.06488934 ETH
+
+
+
+
+もっかいやった
+(base) Hiroyas-MacBook-Pro:ERC721Chap13 hiroyakawaguchi$ truffle migrate --reset --network rinkeby
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x6ac907
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > block number:        4960103
+   > block timestamp:     1566538566
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.200021916
+   > gas used:            269908
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000539816 ETH
+
+   -------------------------------------
+   > Total cost:         0.000539816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Replacing 'ERC721Chap13'
+   ------------------------
+   > block number:        4960105
+   > block timestamp:     1566538597
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.19458873
+   > gas used:            2689559
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005379118 ETH
+
+   -------------------------------------
+   > Total cost:         0.005379118 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.005918934 ETH
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x6ab66c
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x96f17a00a3aa2d1251ae195f24272282d96b1d5823918b54d52a807348e35585
+   > Blocks: 0            Seconds: 9
+   > contract address:    0xd36c3cFe7FdEc9582E3E3dafc776DAffa9041145
+   > block number:        4960107
+   > block timestamp:     1566538636
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.194863572
+   > gas used:            284908
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00569816 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00569816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Replacing 'ERC721Chap13'
+   ------------------------
+   > transaction hash:    0x56171a807a3ef0463c26b47d2b62dc69baab3a0258f606b31fcd8ec429940d1b
+   > Blocks: 0            Seconds: 9
+   > contract address:    0x7F2D6D689EfCF5C0d6D31990B78415B13fFa97BC これよ
+   > block number:        4960109
+   > block timestamp:     1566538666
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.134831712
+   > gas used:            2959559
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05919118 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.05919118 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.06488934 ETH
+
+
+
+
+
+
+
+
+さらにもう一回deployした=>失敗。なぜなら、１つトークンを持ってる時に追加はできないようにプログラムされてるから。＝＞しかしそれも自分で書き換えられるslackみろ
+(base) Hiroyas-MacBook-Pro:ERC721Chap13 hiroyakawaguchi$ truffle migrate --reset --network rinkeby
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x6abf34
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > block number:        4959506
+   > block timestamp:     1566529510
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.266621601
+   > gas used:            269908
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000539816 ETH
+
+   -------------------------------------
+   > Total cost:         0.000539816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Replacing 'ERC721Chap13'
+   ------------------------
+   > block number:        4959508
+   > block timestamp:     1566529559
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.261188415
+   > gas used:            2689559
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005379118 ETH
+
+   -------------------------------------
+   > Total cost:         0.005379118 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.005918934 ETH
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x6acfc0
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0xb5fc5f81dabf7246a21cec96dc7dd81db81c3b10fdaece0abcdbfb08c355c977
+   > Blocks: 1            Seconds: 17
+   > contract address:    0x366b70388703B9229E049F3319Bc65769f41D3A8
+   > block number:        4959511
+   > block timestamp:     1566529599
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.261463257
+   > gas used:            284908
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00569816 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00569816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Replacing 'ERC721Chap13'
+   ------------------------
+   > transaction hash:    0xd5749154c15f6147a1c057c05c171e10ea14399e4f6503f3325233846b9cd10a
+   > Blocks: 0            Seconds: 9
+   > contract address:    0xa142C34AB0066DD6E2f66dA9F5e14c5042a0107F
+   > block number:        4959513
+   > block timestamp:     1566529629
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.201431397
+   > gas used:            2959559
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05919118 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.05919118 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.06488934 ETH
+
+
+
+
+自由にトークン発行できるようにしたやつ
+(base) Hiroyas-MacBook-Pro:ERC721Chap13 hiroyakawaguchi$ truffle migrate --reset --network rinkeby
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/ERC721Chap13.sol
+> Artifacts written to /Users/hiroyakawaguchi/ERC721Chap13/build/contracts
+> Compiled successfully using:
+   - solc: 0.5.8+commit.23d335f2.Emscripten.clang
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x6acfc0
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > block number:        4961037
+   > block timestamp:     1566552824
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.133534898
+   > gas used:            269908
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000539816 ETH
+
+   -------------------------------------
+   > Total cost:         0.000539816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Replacing 'ERC721Chap13'
+   ------------------------
+   > block number:        4961039
+   > block timestamp:     1566552852
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.127984692
+   > gas used:            2748069
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005496138 ETH
+
+   -------------------------------------
+   > Total cost:         0.005496138 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.006035954 ETH
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x6acfc0
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x56702988fef02464ebe29a5d32290cf84d3fd35ed1150617c7ffbc1b36dbcceb
+   > Blocks: 0            Seconds: 13
+   > contract address:    0xA7bC111D18bea3F8788D42617D20Ea58b19F0CE2
+   > block number:        4961041
+   > block timestamp:     1566552895
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.128376554
+   > gas used:            284908
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00569816 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00569816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Replacing 'ERC721Chap13'
+   ------------------------
+   > transaction hash:    0xe73e6703d5c7eb60c17b599c30bf0d84a78d8b7b8c1678a3169f2f1afb6377e9
+   > Blocks: 0            Seconds: 9
+   > contract address:    0xdfCa6266E003D0d9459ba9732c71ec211e489e1F
+   > block number:        4961043
+   > block timestamp:     1566552925
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.067174494
+   > gas used:            3018069
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.06036138 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.06036138 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.06605954 ETH
+
+
+
+
+
+
+
+
+
+↓ここから下はエラーを起こしたやつ truffle version をアップデートした。つまりtruffle をterminalで installしなおしたらできた。
+/*
+(py27) Hiroyas-MacBook-Pro:ERC721Chap13 hiroyakawaguchi$ truffle migrate --network rinkeby
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/ERC721Chap13.sol
+> Compiling ./contracts/Migrations.sol
+> Compiling openzeppelin-solidity/contracts/drafts/Counters.sol
+> Compiling openzeppelin-solidity/contracts/introspection/ERC165.sol
+> Compiling openzeppelin-solidity/contracts/introspection/IERC165.sol
+> Compiling openzeppelin-solidity/contracts/math/SafeMath.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC721/ERC721.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC721/ERC721Enumerable.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC721/ERC721Full.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC721/ERC721Metadata.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC721/IERC721.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC721/IERC721Enumerable.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol
+> Compiling openzeppelin-solidity/contracts/utils/Address.sol
+> Artifacts written to /Users/hiroyakawaguchi/ERC721Chap13/build/contracts
+> Compiled successfully using:
+   - solc: 0.5.0+commit.1d4f565a.Emscripten.clang
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x6ad990
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        4868741
+   > block timestamp:     1565161049
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.542683844
+   > gas used:            269908
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000539816 ETH
+
+   -------------------------------------
+   > Total cost:         0.000539816 ETH
+
+
+2_deploy_ERC721Chap13.js
+========================
+
+   Deploying 'ERC721Chap13'
+   ------------------------
+   > block number:        4868743
+   > block timestamp:     1565161071
+   > account:             0xdE9F470fD859728f114bb0C84f2e0E1454b783Cc
+   > balance:             21.537250658
+   > gas used:            2689559
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005379118 ETH
+
+   -------------------------------------
+   > Total cost:         0.005379118 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.005918934 ETH
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x6ade30
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x7a1212e7181488b3e21273b136c6147185f9f17f4a8f82c55b847c528dbc7245
+   ⠼ Blocks: 2            Seconds: 17TypeError: Cannot read property 'timestamp' of null
+    at Reporter.postDeploy (/usr/local/lib/node_modules/truffle/build/webpack:/packages/truffle-reporters/reporters/migrations-V5/reporter.js:317:1)
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)
+Truffle v5.0.11 (core: 5.0.11)
+Node v11.13.0
+*/
